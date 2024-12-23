@@ -1,0 +1,157 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+ 
+.navbar-container {
+  width: 100%;
+  max-width: 1200px;
+  padding-block: 1rem;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 9999;
+}
+ 
+.navbar-container .logo img {
+  width: 150px;
+}
+ 
+.navbar-container .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+.navbar-container .nav-list li {
+  list-style-type: none;
+}
+.navbar-container .nav-list li a {
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+ 
+.navbar-container .nav-list li:hover a {
+  background-color: #F86939;
+  color: white;
+}
+ 
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: center;
+}
+ 
+main .content {
+  flex: 100;
+  display: flex;
+  align-items: center;
+}
+ 
+.content-description {
+  flex: 1 1;
+}
+ 
+.content-description .title {
+  margin-block: 1rem;
+ 
+  font-size: 3.5rem;
+}
+ 
+.content-description p {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+ 
+.content-description button {
+  padding: 0.8rem 2.5rem;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  margin-block-start: 1rem;
+  background-color: #100E09;
+  font-family: 'Quicksand', sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+ 
+  transition: all 0.15s ease-in;
+}
+ 
+.content-description button:hover {
+  border: 3px solid #F86939;
+  background-color: transparent;
+  color: #F86939	;
+}
+ 
+.content-image {
+  flex: 1;
+ 
+  display: flex;
+}
+ 
+.content-image img {
+  width: 300px;
+  min-width: 250px;
+  margin: auto;
+}
+ 
+main aside {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+}
+ 
+.social-media {
+  height: 100%;
+  display: flex;
+}
+ 
+.social-media ul {
+  padding: 1.5rem 1rem;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  margin: auto;
+  background-color: #100E09	;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+ 
+.social-media li {
+  list-style-type: none;
+}
+ 
+.social-media li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+ 
+  transition: all 0.1s ease-in-out;
+}
+ 
+.social-media li a:hover {
+  color: #F86939		;
+}
